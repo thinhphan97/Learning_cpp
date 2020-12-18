@@ -10,3 +10,5 @@ git add .
 git commit -m ""
 ##push all changes to git server
 git push
+
+thinh phan !!
