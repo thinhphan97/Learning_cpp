@@ -15,3 +15,8 @@ git push
 *.exe
 git rm -rf --cached .
 git add .
+
+# g++
+
+g++ *.cpp -o main.bin
+
