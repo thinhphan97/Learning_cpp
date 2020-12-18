@@ -11,4 +11,7 @@ git commit -m ""
 ##push all changes to git server
 git push
 
-thinh phan !!
+# gitignore
+*.exe
+git rm -rf --cached .
+git add .
