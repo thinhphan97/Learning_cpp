@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 #include "businessobject/Employee.h"
 #include "businessobject/Department.h"
@@ -10,5 +11,14 @@ int main(){
     e.Print_employee();
     d.Print_department();
     system("pause");
+=======
+#include<iostream>
+#include"bussinessobject/Employee.h"
+using namespace std;
+
+int main(){
+    cout<< "hello world"<< endl;
+    Employee e(1, "Chau", "Bao", "Ngo", 111222333, "1975-04-30", "Chicago", 'M', 10000, -1, 5);
+>>>>>>> fe3667c (file project)
     return 0;
 }
