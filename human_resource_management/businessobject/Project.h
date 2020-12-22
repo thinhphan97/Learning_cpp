@@ -7,6 +7,7 @@ using namespace std;
 
 class Project
 {
+private:
     string Pname;
     int Pnumber;
     string Plocation;

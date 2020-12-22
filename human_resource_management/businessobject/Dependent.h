@@ -6,8 +6,9 @@ using namespace std;
 
 class Dependent
 {
- int ESSN;
- string Dependent_name, Sex, Bdate, Relationship;
+private:
+    int ESSN;
+    string Dependent_name, Sex, Bdate, Relationship;
 public:
     Dependent();
     Dependent(int essn, string dependent_name, string sex, string bdate, string relationship);

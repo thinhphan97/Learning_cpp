@@ -5,6 +5,7 @@
 using namespace std;
 
 class Department{
+private:
     string Dname;
     int Dnumber;
     int MgrSSN;

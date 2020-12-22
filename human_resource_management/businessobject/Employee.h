@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 class Employee{
+private:
     int Id;
     string Fname, Minit, Lname;
     long SSN;
@@ -14,6 +15,7 @@ class Employee{
 public:
     Employee();
     Employee(int id, string fname, string minit, string lname, long ssn, string bdate, string adress, char sex, int salary,long superSSN, int dno);
-    void Print_employee();
+    int GetId();
+    string Printdata();
 };
 #endif

@@ -1,0 +1,1 @@
+g++ main.cpp businessobject/Employee.cpp dataaccess/EmployeeData.cpp ui/InputEmployee.cpp-o main.exe

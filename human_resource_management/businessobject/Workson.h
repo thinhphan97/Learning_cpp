@@ -3,6 +3,7 @@
 
 class Workson
 {
+private:
     int ESSN, PNO;
     float Hours; 
 public:

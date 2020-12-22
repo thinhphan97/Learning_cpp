@@ -17,6 +17,21 @@ Employee::Employee(int id, string fname, string minit, string lname, long ssn, s
     SuperSSN = superSSN;
     DNO = dno;
 }
-void Employee::Print_employee(){
-        cout<< Id <<" "<< Fname <<" "<< Minit <<" "<< Lname <<" "<< SSN <<" "<< Bdate <<" "<< Adress <<" "<< Sex <<" "<< Salary <<" "<< SuperSSN <<" "<< DNO << endl;
-    }
+int Employee::GetId(){
+    return Id;
+}
+string Employee::Printdata(){
+   string s;
+   s += to_string(Id)+"|";
+   s += Fname+"|";
+   s += Minit+"|";
+   s += Lname+"|";
+   s += to_string(SSN)+"|";
+   s += Bdate+"|";
+   s += Adress+"|";
+   s += Sex+"|";
+   s += to_string(Salary)+ "|";
+   s += to_string(SuperSSN)+"|";
+   s += to_string(DNO)+"|";
+   return s;
+}

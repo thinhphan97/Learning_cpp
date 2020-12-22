@@ -3,6 +3,7 @@
 #include <string>
 class Deptlocations
 {
+private:
     std::string Dlocation;
     int Dnumber;
 public:
