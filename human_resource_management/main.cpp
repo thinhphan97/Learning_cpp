@@ -1,6 +1,8 @@
 #include <iostream>
+#include <conio.h>
 #include "businessobject/Employee.h"
 #include "dataaccess/EmployeeData.h"
+#include "ui/InputEmployee.h"
 using namespace std;
 
 int main(){
@@ -15,9 +17,16 @@ int main(){
     // e.PushBack(e3);
     // e.PushBack(e4);
 
-    EmployeeData e("Employee.json");
+    EmployeeData e("Employee.data");
 
-    // cout << e.Getdata(1).Printdata() << endl;
+    InputEmployee In;
+    Employee f;
+    f = In.InputData();
+    cout << f.Printdata() << endl;
+
+    e.PushBack(f);
+
+    cout << e.Getdata(1).Printdata() << endl;
     for(int i = 0; i< e.GetMaxId(); i++){
         Employee* f = e.GetPointer(i);
         cout << f->Printdata()<< endl;
@@ -34,6 +43,7 @@ int main(){
     // else{
     //      cout << f->GetId() << endl;
     // }
-    // e.ExportToFile("Employee.json");
+    remove("Employee.data");
+    e.ExportToFile("Employee.data");
     return 0;
 }

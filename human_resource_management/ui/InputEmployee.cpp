@@ -1,6 +1,8 @@
 #include "InputEmployee.h"
 
-InputEmployee::Employee(){};
+InputEmployee::InputEmployee(){
+
+};
 
 Employee InputEmployee::InputData(){
     int id; 
@@ -26,8 +28,8 @@ Employee InputEmployee::InputData(){
     cin >> ssn;
     cout <<"Enter Birth date :";
     cin >> bdate;
-    cout >>"Enter address :";
-    cin << adress;
+    cout <<"Enter address :";
+    cin >> adress;
     cout << "Enter sex :";
     cin >> sex;
     cout << "Enter salary :";
@@ -36,6 +38,7 @@ Employee InputEmployee::InputData(){
     cin >> superSSN;
     cout << "Enter dno:";
     cin >> dno;
-    Employee e(int id, string fname, string minit, string lname, long ssn, string bdate, string adress, char sex, int salary,long superSSN, int dno);
+    
+    Employee e( id, fname, minit, lname, ssn, bdate, adress, sex, salary, superSSN, dno);
     return e;
 };
