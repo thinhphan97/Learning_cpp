@@ -1,6 +1,9 @@
 #ifndef  _businessobject_Employee_h_
 #define  _businessobject_Employee_h_
 #include <string>
+#include "../libs/json.hpp"
+using json = nlohmann::json;
+
 using namespace std;
 class Employee{
 private:
@@ -17,5 +20,7 @@ public:
     Employee(int id, string fname, string minit, string lname, long ssn, string bdate, string adress, char sex, int salary,long superSSN, int dno);
     int GetId();
     string Printdata();
+    json ToJson();
+
 };
 #endif

@@ -29,9 +29,26 @@ string Employee::Printdata(){
    s += to_string(SSN)+"|";
    s += Bdate+"|";
    s += Adress+"|";
-   s += Sex+"|";
+   s += string(1, Sex)+"|";
    s += to_string(Salary)+ "|";
    s += to_string(SuperSSN)+"|";
    s += to_string(DNO)+"|";
    return s;
+}
+json Employee::ToJson(){
+    json e;
+    e["Id"] = Id;
+    e["Fname"] = Fname;
+    e["Minit"] = Minit;
+    e["Lname"] = Lname;
+    e["SSN"] = SSN;
+    e["Bdate"] = Bdate;
+    e["Adress"] = Adress;
+    e["Sex"] = string(1,Sex);
+    e["Salary"] = Salary;
+    e["SuperSSN"] = SuperSSN;
+    e["DNO"] = DNO;
+
+    return e;
+
 }
