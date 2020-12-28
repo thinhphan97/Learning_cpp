@@ -20,6 +20,9 @@ Employee::Employee(int id, string fname, string minit, string lname, long ssn, s
 int Employee::GetId(){
     return Id;
 }
+long Employee::GetSSN(){
+    return SSN;
+}
 string Employee::Printdata(){
    string s;
    s += to_string(Id)+"|";
@@ -52,3 +55,57 @@ json Employee::ToJson(){
     return e;
 
 }
+
+void Employee::SetFname(string name){
+    Fname = name;
+}
+
+void Employee::SetMinit(string minit){
+    Minit = minit;
+}
+
+void Employee::SetLname(string lname){
+    Lname = lname;
+}
+
+void Employee::SetSSN(long ssn){
+    SSN = ssn;
+}
+
+void Employee::SetBdate(string bdate){
+    Bdate = bdate;
+}
+
+void Employee::SetAdress(string adress){
+    Adress = adress;
+}
+
+void Employee::SetSex(char sex){
+    Sex = sex;
+}
+
+void Employee::SetSalary(int salary){
+    Salary = salary;
+}
+
+void Employee::SetSuperSSN(long superssn){
+    SuperSSN = superssn;
+}
+
+void Employee::SetDNO(int dno){
+    DNO = dno;
+}
+
+// void UpdateEmployee(Employee& e, int id, string fname, string minit, string lname, long ssn, string bdate, string adress, char sex, int salary,long superSSN, int dno){
+//     e.Id =id;
+//     e.Fname = fname;
+//     e.Minit = minit;
+//     e.Lname = lname;
+//     e.SSN = ssn;
+//     e.Bdate = bdate;
+//     e.Adress = adress;
+//     e.Sex = sex;
+//     e.Salary = salary;
+//     e.SuperSSN = superSSN;
+//     e.DNO = dno; 
+// }

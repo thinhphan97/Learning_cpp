@@ -19,6 +19,11 @@ public:
     //Employee Get(int i);
     Employee* GetPointer(int i);
     int ExportToFile(string);
+    int DeleteSSN(long ssn);
+    Employee EditSSN(long ssn,int choose,int intParameters);
+    Employee EditSSN(long ssn,int choose,string stringParameters);
+    Employee EditSSN(long ssn,int choose,char charParameters);
+
 
 };
 

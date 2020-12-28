@@ -31,9 +31,8 @@ EmployeeData::EmployeeData(string filename){
             j["SuperSSN"],
             j["DNO"] 
             );
-        // cout << p.Printdata()<<endl;
         _data.push_back(p);
-        _maxId++;
+        _maxId= j["Id"];
     }
     inFile.close();
    }
@@ -46,6 +45,16 @@ int EmployeeData::PushBack(Employee e){
     }
     _data.push_back(e);
     return _maxId;
+}
+int EmployeeData::DeleteSSN(long ssn){
+
+    for(int i = 0; i<= _data.size(); i++){
+        if(_data[i].GetSSN()==ssn){
+            _data.erase(_data.begin()+i);
+            return i;
+        }
+    }
+    return -1;
 }
 Employee EmployeeData::Getdata(int i){
     return _data[i];
@@ -61,7 +70,6 @@ int EmployeeData::ExportToFile(string filename){
     if(!outFile) return 0;
     for (Employee e:_data){
         outFile << e.ToJson() << endl;
-
     }
     outFile.close();
     return 1;
