@@ -10,8 +10,6 @@ protected:
 public:
     Rectangle();
     Rectangle(float w, float h);
-    void setw(float w);
-    void seth(float h);
     float Area();
     void Input(istream& inDevice);
 };

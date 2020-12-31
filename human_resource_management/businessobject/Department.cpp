@@ -10,6 +10,3 @@ Department::Department(string dname, int dnumber, int mgrSSN, string mgrstartdat
     MgrSSN = mgrSSN;
     Mgrstartdate = mgrstartdate;
 }
-void Department::Print_department(){
-    cout<<Dname<<" "<<Dnumber<<" "<<MgrSSN<<" "<<Mgrstartdate<< endl;
-}

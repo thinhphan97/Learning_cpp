@@ -74,3 +74,16 @@ int EmployeeData::ExportToFile(string filename){
     outFile.close();
     return 1;
 }
+
+Employee EmployeeData::EditSSN(long ssn,int choose,long intParameters){
+    
+}
+Employee EmployeeData::EditSSN(long ssn,int choose,string stringParameters){
+
+}
+Employee EmployeeData::EditSSN(long ssn,int choose,char charParameters){
+
+}
+Employee EmployeeData::EditSSN(long ssn,int choose, char intParameters){
+
+}
