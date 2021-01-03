@@ -1,0 +1,1 @@
+g++ main.cpp businessobject/Employee.cpp dataaccess/DataAccess.cpp dataaccess/EmployeeData.cpp businessobject/BaseObject.cpp dataaccess/DepartmentData.cpp businessobject/Department.cpp libs/FunctionPlus.cpp businessobject/DeptLocation.cpp dataaccess/DeptLocationData.cpp dataaccess/ProjectData.cpp businessobject/Project.cpp -o main.exe

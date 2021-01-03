@@ -1,0 +1,8 @@
+{"Adress":"houton,TX","Bdate":"1965-01-09","DNO":5,"Fname":"John","Id":1,"Lname":"Smith","Minit":"C","SSN":123456789,"Salary":30000,"Sex":"M","SuperSSN":33344555}
+{"Adress":"houston,TX","Bdate":"1965-12-08","DNO":5,"Fname":"Franklin","Id":2,"Lname":"Wong","Minit":"T","SSN":33344555,"Salary":40000,"Sex":"M","SuperSSN":888665555}
+{"Adress":"spring,TX","Bdate":"1968-07-19","DNO":4,"Fname":"Alica","Id":3,"Lname":"Zelaya","Minit":"J","SSN":999887777,"Salary":2500,"Sex":"F","SuperSSN":987654321}
+{"Adress":"bellaire,TX","Bdate":"1941-06-20","DNO":4,"Fname":"Jenifer","Id":4,"Lname":"walace","Minit":"S","SSN":987654321,"Salary":4300,"Sex":"F","SuperSSN":888665555}
+{"Adress":"Humble,TX","Bdate":"1962-09-15","DNO":5,"Fname":"Ramesh","Id":5,"Lname":"Narayan","Minit":"K","SSN":666884444,"Salary":38000,"Sex":"M","SuperSSN":333445555}
+{"Adress":"Houston,TX","Bdate":"1972-07-31","DNO":5,"Fname":"Joyce","Id":6,"Lname":"English","Minit":"A","SSN":453453453,"Salary":25000,"Sex":"F","SuperSSN":333445555}
+{"Adress":"Houston,TX","Bdate":"1969--03-29","DNO":4,"Fname":"Ahmad","Id":7,"Lname":"Jabber","Minit":"V","SSN":987987987,"Salary":25000,"Sex":"M","SuperSSN":987654321}
+{"Adress":"Houston,TX","Bdate":"1937-11-10","DNO":1,"Fname":"James","Id":8,"Lname":"Borg","Minit":"E","SSN":888665555,"Salary":55000,"Sex":"M","SuperSSN":0}
