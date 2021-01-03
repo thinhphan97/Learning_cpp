@@ -1,13 +1,13 @@
 #include "WorksOn.h"
 
-WorksOn::Workson(){ }
-WorksOn::Workson(int id, int essn, int pno, int hours){
+WorksOn::WorksOn(){ }
+WorksOn::WorksOn(int id, long essn, int pno, float hours){
     this->Id = id;
     this->ESSN = essn;
     this->PNO = pno;
     this->Hours = hours;
 }
-WorksOn::Workson(int essn, int pno, int hours){
+WorksOn::WorksOn(long essn, int pno, float hours){
     this->ESSN = essn;
     this->PNO = pno;
     this->Hours = hours;
@@ -23,10 +23,10 @@ void WorksOn::SetSubId(){
     --Id;
 }
 
-void WorksOn::SetESSN(int essn){
+void WorksOn::SetESSN(long essn){
     this->ESSN = essn;
 }
-int WorksOn::GetESSN(){
+long WorksOn::GetESSN(){
     return ESSN;
 }
 void WorksOn::SetPNO(int pno){

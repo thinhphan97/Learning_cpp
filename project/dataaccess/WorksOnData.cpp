@@ -1,50 +1,50 @@
-#include "ProjectData.h"
+#include "WorksOnData.h"
 #include <fstream>
 #include <algorithm>
 #include "../libs/json.hpp"
-#include "../libs/Functionplus.h"
+#include <iostream>
+#include <string>
 
 using namespace std;
 using json = nlohmann::json;
 
-ProjectData::ProjectData(/* args */){
+WorksOnData::WorksOnData(){
     _MaxId = 0;
     _data.resize(0);
 }
-ProjectData::ProjectData(string file_name){
+WorksOnData::WorksOnData(string file_name){
     _MaxId = 0;
     _data.resize(0);
     this->file_name = file_name;
 }
-void ProjectData::ReadData(){
-    ifstream inFile(file_name);
+void WorksOnData::ReadData(){
+ifstream inFile(file_name);
     const int maxSize = 255;
     char buff[maxSize];
     while (inFile.getline(buff,maxSize)){
         json j = json::parse(buff);
-        Project p(
+
+        WorksOn p(
             j["Id"],
-            j["PName"],
-            j["PNumber"],
-            j["PLocation"],
-            j["DNum"]
-            );
+            j["ESSN"],
+            j["PNO"],
+            j["Hours"]);
         p.SetId(j["Id"]);
         _data.push_back(p);
         _MaxId= j["Id"];
     }
-    inFile.close();
+    inFile.close(); 
 }
-int ProjectData::AddData(BaseObject* baseobject){
-    Project* _DataAdd = (Project*) baseobject;
+int WorksOnData::AddData(BaseObject* baseobject){
+    WorksOn* _DataAdd = (WorksOn*) baseobject;
     _DataAdd->SetId(++_MaxId);
     _data.push_back(*_DataAdd);
     return _MaxId;
 }
-int ProjectData::DeleteData(string PName){
+int WorksOnData::DeleteData(long essn){
     int f=-1;
     for(int i = 0; i<= _data.size(); i++){
-        if(Functionplus::StringToUpper([i].GetPName()) == Functionplus::StringToUpper(PName)){
+        if(_data[i].GetESSN()==essn){
             _data.erase(_data.begin()+i);
             f=i;
             _MaxId--;
@@ -55,37 +55,37 @@ int ProjectData::DeleteData(string PName){
     }
     return f;
 }
-int ProjectData::UpdateData(BaseObject* baseobject){
-    Project* _Editdata = (Project*) baseobject;
+int WorksOnData::UpdateData(BaseObject* baseobject){
+    WorksOn* _Editdata = (WorksOn*) baseobject;
     int i = _Editdata->GetId();
     _data[i-1] = *_Editdata;
     return 0;
 }
-vector<BaseObject*> ProjectData::SelectAllData(){
+vector<BaseObject*> WorksOnData::SelectAllData(){
     vector<BaseObject*> _outData;
     for(int i=0; i < _MaxId; i++){
         _outData.push_back(&_data[i]);
     }
     return _outData;
 }
-Project ProjectData::SelectData(string PName){
+WorksOn WorksOnData::SelectData(long essn){
     for(int i = 0; i <= _data.size(); i++){
-        if(Functionplus::StringToUpper(_data[i].GetPName())== Functionplus::StringToUpper(PName)){
-            return _data[i];
+            if(_data[i].GetESSN()==essn){
+                return _data[i];
+            }
         }
-    }
-    
-    throw "SSN is not valid !";
+        
+        throw "SSN is not valid !";
 }
-int ProjectData::PullFile(){
+int WorksOnData::PullFile(){
     ofstream outFile(file_name, ios::out);
     if(!outFile) return 0;
-    for (Project e:_data){
+    for (WorksOn e:_data){
         outFile << e.ToJson() << endl;
     }
     outFile.close();
     return 1;
 }
-int ProjectData::GetMaxId(){
-    return _MaxId;
+int WorksOnData::GetMaxId(){
+    return _MaxId;    
 }

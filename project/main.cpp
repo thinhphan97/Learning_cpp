@@ -7,6 +7,8 @@
 #include "dataaccess/DeptLocationData.h"
 #include "businessobject/Project.h"
 #include "dataaccess/ProjectData.h"
+#include "businessobject/WorksOn.h"
+#include "dataaccess/WorksOnData.h"
 #include "iostream"
 #include <vector>
 
@@ -23,7 +25,22 @@ int main(){
     // }
     // ProjectData data("Project.Data");
     // data.ReadData();
-    // cout<< data.SelectData("ProductX").ConvertToString()<<endl;
+    // data.DeleteData("productx");
+    // vector<BaseObject*> _data;
+    // _data = data.SelectAllData();
+    // for(BaseObject* PrintData:_data){
+    //     Project* Data = (Project*) PrintData;
+    //     cout<< Data->ConvertToString()<<endl;
+    // }
+
+    DataAccess* data= new WorksOnData("Workson.Data");
+    data->ReadData();
+    vector<BaseObject*> _data;
+    _data = data->SelectAllData();
+    for(BaseObject* PrintData:_data){
+        WorksOn* Data = (WorksOn*) PrintData;
+        cout<< Data->ConvertToString()<<endl;
+    }
     
     system("pause");
     return 0;

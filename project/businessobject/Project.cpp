@@ -78,6 +78,7 @@ void Project::SetDNum(int Dnum)
 string Project::ConvertToString(){
     string s;
     s += to_string(Id) + " | ";
+    s += PName + " | ";
     s += to_string(PNumber) + " | ";
     s += PLocation + " | ";
     s += to_string(DNum);

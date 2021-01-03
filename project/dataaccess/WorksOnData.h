@@ -16,10 +16,10 @@ public:
     WorksOnData(string file_name);
     void ReadData();
     int AddData(BaseObject* baseobject);
-    int DeleteData(int essn);
+    int DeleteData(long essn);
     int UpdateData(BaseObject* baseobject);
     vector<BaseObject*> SelectAllData();
-    Employee SelectData(int essn);
+    WorksOn SelectData(long essn);
     int PullFile();
     int GetMaxId();
 };
