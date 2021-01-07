@@ -1,0 +1,10 @@
+8
+9
+0 12 toi_thay_hoa_vang_tren_doi_co_xanh 0
+1 13 toi_thay_hoa_vang_tren_doi_co_xanh1 0
+2 14 toi_thay_hoa_vang_tren_doi_co_xanh2 0
+3 15 toi_thay_hoa_vang_tren_doi_co_xanh3 0
+4 16 toi_thay_hoa_vang_tren_doi_co_xanh4 0
+5 17 toi_thay_hoa_vang_tren_doi_co_xanh5 0
+7 19 toi_thay_hoa_vang_tren_doi_co_xanh7 0
+8 20 toi_thay_hoa_vang_tren_doi_co_xanh8 0
