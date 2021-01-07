@@ -1,0 +1,5 @@
+g++ main.cpp data/Member.cpp access/MemberAccess.cpp -o main.exe
+
+g++ main2.cpp data/Book.cpp access/BookAccess.cpp libs/Function.cpp data/BorrowReturn.cpp access/BorrowReturnAccess.cpp data/Member.cpp access/MemberAccess.cpp ui/MemberUi.cpp -o main.exe
+
+g++ main2.cpp data/Book.cpp access/BookAccess.cpp libs/Function.cpp data/BorrowReturn.cpp access/BorrowReturnAccess.cpp data/Member.cpp access/MemberAccess.cpp ui/MemberUi.cpp -o main.exe
