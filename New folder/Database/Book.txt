@@ -1,0 +1,11 @@
+9
+9
+0 12 toi_thay_hoa_vang_tren_doi_co_xanh 12000
+1 13 toi_thay_hoa_vang_tren_doi_co_xanh1 13000
+2 14 toi_thay_hoa_vang_tren_doi_co_xanh2 14000
+3 15 toi_thay_hoa_vang_tren_doi_co_xanh3 15000
+4 16 toi_thay_hoa_vang_tren_doi_co_xanh4 16000
+5 17 toi_thay_hoa_vang_tren_doi_co_xanh5 17000
+6 18 toi_thay_hoa_vang_tren_doi_co_xanh6 18000
+7 19 toi_thay_hoa_vang_tren_doi_co_xanh7 19000
+8 20 toi_thay_hoa_vang_tren_doi_co_xanh8 20000
